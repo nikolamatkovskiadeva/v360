@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: $font-family-primary;
+}
+body{
+    background: #1A1D22;
+}
+header {
+    min-height: 1281px;
+    position: relative;
+
+        
+    
+    .above-header {
+        padding-top: 55px;
+
+            
+        div#logo{
+            img {
+                width: 220px;
+            }
+        }
+    }
+
+    .social-networks {
+        display: flex;
+    }
+    
+    .social-networks {
+        a {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-left: 15px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    
+    
+    .header-right-side {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .find-dentist a {
+        font-size: 19px;
+        font-weight: 100;
+        color: white;
+        text-decoration: none;
+        margin-left: 80px;
+    }
+    
+    .search {
+        margin-left: 20px;
+    }
+}

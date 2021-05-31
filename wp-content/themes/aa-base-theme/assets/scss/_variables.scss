@@ -1,0 +1,50 @@
+// ***********************************
+// VARIABLES
+// ***********************************
+
+// TYPOGRAPHY 
+$font-family-primary: 'Habanera';
+$font-text: 'Gorgone';
+
+
+$black : #1A1D22;
+$gold : #EDBC7F;
+$white : #F5F5F5;
+
+@font-face{
+    font-family: 'Gorgone';
+	font-display: fallback;
+	font-style: italic;
+	font-weight: 500;
+	src: url('/wp-content/themes/aa-base-theme/assets/fonts/Gorgone DEMO.ttf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Habanera';
+	font-display: fallback;
+	font-style: normal;
+	font-weight: 100;
+	src: url('/wp-content/themes/aa-base-theme/assets/fonts/Habanera-Light.ttf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Habanera';
+	font-display: fallback;
+	font-style: normal;
+	font-weight: 500;
+	src: url('/wp-content/themes/aa-base-theme/assets/fonts/Habanera-Regular.ttf') format('opentype');
+}
+@font-face{
+    font-family: 'Habanera';
+	font-display: fallback;
+	font-style: normal;
+	font-weight: 600;
+	src: url('/wp-content/themes/aa-base-theme/assets/fonts/Habanera-Medium.ttf') format('opentype');
+}
+@font-face{
+    font-family: 'Habanera';
+	font-display: fallback;
+	font-style: normal;
+	font-weight: 700;
+	src: url('/wp-content/themes/aa-base-theme/assets/fonts/Habanera-Bold.ttf') format('opentype');
+}
