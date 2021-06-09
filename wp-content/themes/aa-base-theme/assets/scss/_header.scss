@@ -7,10 +7,13 @@ body{
     background: #1A1D22;
 }
 header {
-    min-height: 1281px;
+    min-height: 100vh;
     position: relative;
 
-        
+    @media (min-width:550px){
+        min-height: 1281px;
+
+    }
     
     .above-header {
         padding-top: 55px;
@@ -18,16 +21,25 @@ header {
             
         div#logo{
             img {
-                width: 220px;
+                width: 110px;
+
+                @media (min-width:550px){
+                    width: 220px;
+                }
             }
         }
     }
 
-    .social-networks {
-        display: flex;
-    }
     
     .social-networks {
+        display: none;
+
+        @media (min-width:550px){
+            display: flex;
+        }
+
+        
+
         a {
             width: 30px;
             height: 30px;
@@ -48,9 +60,14 @@ header {
     
     
     .header-right-side {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        display: none;
+
+        @media (min-width:550px){
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
     }
     
     .find-dentist a {

@@ -2,9 +2,9 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="footer-logo col-3"><img src="<?= get_field('footer_logo','options')['url']; ?>" /></div>
-            <div class="footer-number col-3"><a href="tel:<?= get_field('telephone_number','options'); ?>"><?= get_field('telephone_number','options'); ?></a></div>
-            <div class="footer-social col-2">
+            <div class="footer-logo col-md-3 col-12"><img src="<?= get_field('footer_logo','options')['url']; ?>" /></div>
+            <div class="footer-number col-md-3 col-12"><a href="tel:<?= get_field('telephone_number','options'); ?>"><?= get_field('telephone_number','options'); ?></a></div>
+            <div class="footer-social col-md-2 col-12">
                 <a href="<?= get_field("twitter","options"); ?>">
                     <i class="fab fa-twitter"></i>
                 </a>
@@ -15,7 +15,7 @@
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
-            <div class="footer-find-dentis col-4">
+            <div class="footer-find-dentis col-md-4 col-12">
                 <form method="POST">
                     <input type="text" name="city"  placeholder="City" />
                     <input type="text" name="postcode" placeholder="Postcode" />

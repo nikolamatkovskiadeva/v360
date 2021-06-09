@@ -1,12 +1,12 @@
 <div class="timing-section" >
     <div class="container">
         <div class="row">
-            <div class="col-5">
+            <div class="col-md-5 col-12 timing-image">
                 <div class="timing-image-wrap" >
                     <img src="<?= get_field('timing_section_left_image')['url']; ?>" />
                 </div>
             </div>
-            <div class="col-7">
+            <div class="col-md-7 col-12 timing-texts">
                 <div class="timing-text-wrap">
                     <h2><?= get_field('timing_section_title');?></h2>
                     <div class="timing-text-inside"><?= get_field('timing_section_text');?></div>

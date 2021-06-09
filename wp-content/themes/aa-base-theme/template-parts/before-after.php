@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-8 offset-2">
+            <div class="col-md-8 offset-md-2 col-10 offset-1" >
                 <div class="cost-seciton-slider-box">
                         <div class="slider">
                             <?php foreach(get_field('before_after_slider') as $slide): ?>

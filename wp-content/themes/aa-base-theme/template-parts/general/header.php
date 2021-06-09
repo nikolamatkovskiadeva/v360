@@ -34,7 +34,7 @@
     </div>
     <div class="container hero-content">
         <div class="row">
-            <div class=" col-6 offset-6 hero-content-inside">
+            <div class=" col-md-6 col-12 offset-md-6 hero-content-inside">
                 <div class="above-above-text animate">Lorem ipsum dolor sit ame</div>
                 <h2 class="animate">Discover the Power of a 360 Smile</h2>
                 <div class="below-hero-text animate">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Aliquam Tincidunt, Ex Sit Amet Dictum Ultrices, Lectus Felis Vehicula Risus, Vitae.</div>

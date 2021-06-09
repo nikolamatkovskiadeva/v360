@@ -91,7 +91,16 @@
     $('.slider').slick({
         slidesToShow: 3,
         infinite: true,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+            }
+        ]
       })
       
 
@@ -113,8 +122,14 @@ function LaxCall(){
             scrollY: {
             translateX: [
                 ["elInY", "elCenterY", "elOutY"],
-                [-200, '0', 200],
-            ]
+                {
+                    
+                    //550:[-20, '0', 0],
+                    550:[-200, '0', 0],
+                    551:[-200, '0', 200]
+                }
+            ],
+            
             }
         })
 
@@ -122,7 +137,11 @@ function LaxCall(){
             scrollY: {
             translateY: [
                 ["elInY", "elCenterY", "elOutY"],
-                [600, '0', -600],
+                {
+                    //550:[300, 0, 0],
+                    550:[0, 0, 0],
+                    551:[600, '0', -600],
+                }
             ]
             }
         })
@@ -131,7 +150,11 @@ function LaxCall(){
             scrollY: {
             translateY: [
                 ["elInY", "elCenterY", "elOutY"],
-                [-600, '0', 600],
+                {
+                    //550:[-300, 0, 0],
+                    550:[0, 0, 0],
+                    551:[-600, '0', 600],
+                }
             ]
             }
         })
@@ -140,7 +163,11 @@ function LaxCall(){
             scrollY: {
             translateX: [
                 ["elInY", "elCenterY", "elOutY"],
-                [500, '0', 0],
+                {
+                    550:[0, 0, 0],
+                    551:[500, '0', 0],
+                }
+                
             ]
             }
         })
@@ -149,7 +176,11 @@ function LaxCall(){
             scrollY: {
             translateX: [
                 ["elInY", "elCenterY", "elOutY"],
-                [-500, '0', 0],
+                {
+                    //550:[-300, 0, 0],
+                    550:[0, 0, 0],
+                    551:[-500, '0', 0],
+                }
             ]
             }
         })
@@ -158,7 +189,11 @@ function LaxCall(){
             scrollY: {
             translateY: [
                 ["elInY", "elCenterY", "elOutY"],
-                [-500, '0', 0],
+                {
+                    //550:[-300, 0, 0],
+                    550:[0, 0, 0],
+                    551:[-500, '0', 0],
+                }
             ]
             }
         })
@@ -167,12 +202,30 @@ function LaxCall(){
             scrollY: {
             translateY: [
                 ["elInY", "elCenterY", "elOutY"],
-                [70, '0', 0],
+                {
+                    //550:[-300, 0, 0],
+                    550:[0, 0, 0],
+                    551:[70, '0', 0],
+                }
+                
             ]
             }
         })
 
-        lax.addElements('.steps-box-title,.steps-box-text,.cost-section-text,.cost-section-text-gold', {
+        lax.addElements('.cost-section-text', {
+            scrollY: {
+                translateX: [
+                ["elInY", "elCenterY", "elOutY"],
+                {
+                    //550:[-300, 0, 0],
+                    550:[-200, 0, 0],
+                    551:[0, '0', 0],
+                }
+            ]
+            }
+        })
+
+        lax.addElements('.steps-box-title,.steps-box-text,.cost-section-text-gold', {
             scrollY: {
             opacity: [
                 ["elInY", "elCenterY", "elOutY"],
@@ -194,7 +247,12 @@ function LaxCall(){
             scrollY: {
                 translateY : [
                     ["elInY", "elCenterY", "elOutY"],
-                    [-100, 0, 0],
+                    {
+                        //550:[-300, 0, 0],
+                        550:[0, 0, 0],
+                        551:[-100, 0, 0],
+                    }
+                    
                 ],
             }
         })
@@ -203,7 +261,12 @@ function LaxCall(){
             scrollY: {
                 translateY : [
                     ["elInY", "elCenterY", "elOutY"],
-                    [100, 0, 0],
+                    {
+                        //550:[-300, 0, 0],
+                        550:[0, 0, 0],
+                        551:[100, 0, 0],
+                    }
+                    
                 ],
             }
         })
@@ -212,11 +275,21 @@ function LaxCall(){
             scrollY: {
                 translateX : [
                     ["elInY", "elCenterY", "elOutY"],
-                    [0, -20, -20],
+                    {
+                        //550:[-300, 0, 0],
+                        550:[0, 0, 0],
+                        551:[0, -20, -20],
+                    }
+                    
                 ],
                 translateY : [
                     ["elInY", "elCenterY", "elOutY"],
-                    [0, 20, 20],
+                    {
+                        //550:[-300, 0, 0],
+                        550:[0, 0, 0],
+                        551:[0, 20, 20],
+                    }
+                    
                 ],
             }
         })
@@ -225,7 +298,12 @@ function LaxCall(){
             scrollY: {
                 translateY : [
                     ["elInY", "elCenterY", "elOutY"],
-                    [-500, 0, 200],
+                    {
+                        //550:[-300, 0, 0],
+                        550:[0, 0, 0],
+                        551:[-500, 0, 200],
+                    }
+                    
                 ],
             }
         })
@@ -235,7 +313,12 @@ function LaxCall(){
             scrollY: {
                 translateX : [
                     ["elInY", "elCenterY", "elOutY"],
-                    [-200, 0, 0],
+                    {
+                        //550:[-300, 0, 0],
+                        550:[0, 0, 0],
+                        551:[-200, 0, 0],
+                    }
+                    
                 ]
             }
         })
@@ -244,7 +327,11 @@ function LaxCall(){
             scrollY: {
                 translateX : [
                     ["elInY", "elCenterY", "elOutY"],
-                    [200, 0, 0],
+                    {
+                        //550:[-300, 0, 0],
+                        550:[0, 0, 0],
+                        551:[200, 0, 0],
+                    }
                 ]
             }
         })
@@ -253,7 +340,11 @@ function LaxCall(){
             scrollY: {
                 translateX : [
                     ["elInY", "elCenterY", "elOutY"],
-                    [-200, 0, 0],
+                    {
+                        //550:[-300, 0, 0],
+                        550:[0, 0, 0],
+                        551:[-200, 0, 0],
+                    }
                 ]
             }
         })
@@ -262,7 +353,12 @@ function LaxCall(){
             scrollY: {
                 translateX : [
                     ["elInY", "elCenterY", "elOutY"],
-                    [200, 0, 0],
+                    {
+                        //550:[-300, 0, 0],
+                        550:[0, 0, 0],
+                        551:[200, 0, 0],
+                    }
+                    
                 ]
             }
         })
@@ -271,7 +367,12 @@ function LaxCall(){
             scrollY: {
                 translateX : [
                     ["elInY", "elCenterY", "elOutY"],
-                    [-2000, 0, 0],
+                    {
+                        //550:[-300, 0, 0],
+                        550:[0, 0, 0],
+                        551:[-2000, 0, 0],
+                    }
+                    
                 ]
             }
         })
@@ -280,7 +381,12 @@ function LaxCall(){
             scrollY: {
                 translateX : [
                     ["elInY", "elCenterY", "elOutY"],
-                    [2000, 0, 0],
+                    {
+                        //550:[-300, 0, 0],
+                        550:[0, 0, 0],
+                        551:[2000, 0, 0],
+                    }
+                    
                 ]
             }
         })
