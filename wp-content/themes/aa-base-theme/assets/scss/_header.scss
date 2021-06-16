@@ -10,11 +10,22 @@ header {
     min-height: 100vh;
     position: relative;
 
-    @media (min-width:550px){
-        min-height: 1281px;
-
+    @media (min-width:576px){
+        min-height: 0;
+        padding-bottom:160px;
     }
-    
+
+    @media (min-width:769px){
+        min-height: 0;
+        padding-bottom:0;
+    }
+
+    @media (min-width:1281px){
+        min-height: 100vh;
+        padding-bottom: 160px;
+        overflow: hidden;
+    }
+
     .above-header {
         padding-top: 55px;
 
@@ -23,7 +34,7 @@ header {
             img {
                 width: 110px;
 
-                @media (min-width:550px){
+                @media (min-width:576px){
                     width: 220px;
                 }
             }
@@ -34,7 +45,7 @@ header {
     .social-networks {
         display: none;
 
-        @media (min-width:550px){
+        @media (min-width:576px){
             display: flex;
         }
 
@@ -62,7 +73,7 @@ header {
     .header-right-side {
         display: none;
 
-        @media (min-width:550px){
+        @media (min-width:576px){
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -80,5 +91,13 @@ header {
     
     .search {
         margin-left: 20px;
+    }
+
+    .overlay-wrap {
+        height: 300px;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        background: -webkit-gradient(linear, left bottom, left top, from(#1a1d22), color-stop(13%, #1a1d22), to(rgba(255,255,255,0)));
     }
 }
