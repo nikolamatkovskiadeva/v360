@@ -1,6 +1,4 @@
 <header>
-
-
     <div class="hero-image">
         <img class="animate" src="<?= get_field("hero_image")['url']; ?>" />
     </div>
@@ -34,7 +32,7 @@
     </div>
     <div class="container hero-content">
         <div class="row">
-            <div class=" col-6 offset-6 hero-content-inside">
+            <div class=" col-lg-6 col-md-7 col-12 offset-lg-6 offset-md-5 hero-content-inside">
                 <div class="above-above-text animate">Lorem ipsum dolor sit ame</div>
                 <h2 class="animate">Discover the Power of a 360 Smile</h2>
                 <div class="below-hero-text animate">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Aliquam Tincidunt, Ex Sit Amet Dictum Ultrices, Lectus Felis Vehicula Risus, Vitae.</div>
@@ -48,4 +46,5 @@
             </div>
         </div>
     </div>
+    <div class="overlay-wrap"></div>
 </header>
