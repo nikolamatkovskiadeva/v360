@@ -382,6 +382,11 @@
         width: 100%;
         height: auto;
         max-width: 668px;
+        margin-top: 60px;
+
+        @media(min-width:576px){
+            margin-top: 0px;
+        }
 
         img {
             width: 100%;
@@ -547,7 +552,7 @@
 }
 .steps-section {
     background: $white;
-    padding-top: 144px;
+    padding-top: 0;
     padding-bottom: 115px;
     position: relative;
     overflow: hidden;
@@ -556,7 +561,9 @@
         padding-bottom: 175px;
     }
 
-    
+    @media (min-width:1281px){
+        padding-top: 50px;
+    }
 
 
     .white-box {
@@ -1454,6 +1461,7 @@ form.wpcf7-form.init {
                 width: 100%;
                 padding: 15px;
                 border: none;
+                background-color: white;
                 -webkit-appearance:none;
 
                 @media (min-width:576px) {
@@ -1481,7 +1489,7 @@ form.wpcf7-form.init {
         }
     }
 
-    
+   
     .wpcf7-radio {
         display: flex;
         flex-wrap: wrap;
@@ -1539,5 +1547,8 @@ form.wpcf7-form.init {
                     font-size: 20px;
                 }
         }
+    }
+    .fieldbox:nth-child(2) span:last-child {
+        margin-bottom: 0 !important;
     }
 }

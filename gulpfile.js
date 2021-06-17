@@ -15,7 +15,7 @@ const
     del = require('del'),
     sourcemaps = require('gulp-sourcemaps');
 
-
+    
 
 var browserSync = require('browser-sync').create();
 var theme_dir = 'wp-content/themes/aa-base-theme/';
@@ -69,6 +69,8 @@ const imgConfig = {
         optimizationLevel: 5
     }
 };
+
+
 
 
 const compressImages = () => {
