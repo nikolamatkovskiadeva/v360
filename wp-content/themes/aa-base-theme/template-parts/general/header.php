@@ -35,9 +35,9 @@
             <div class=" col-lg-6 col-md-7 col-12 offset-lg-6 offset-md-5 hero-content-inside">
                 <div class="above-above-text animate"><?= get_field('header_above_title'); ?></div>
                 <h2 class="animate"><?= get_field('header_title'); ?></h2>
-                <div class="below-hero-text animate">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Aliquam Tincidunt, Ex Sit Amet Dictum Ultrices, Lectus Felis Vehicula Risus, Vitae.</div>
+                <div class="below-hero-text animate"><?= get_field('header_subtitle'); ?></div>
                 <div class="hero-content-buton animate">
-                    <a href="#">Find Out More</a>
+                    <a href="<?= get_field('header_button_link'); ?>"><?= get_field('header_button_text'); ?></a>
                 </div>
                 <div class="scroll-down">
                     <span class="line"></span>
