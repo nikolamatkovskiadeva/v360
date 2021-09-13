@@ -22,7 +22,7 @@
                     </a>
                 </div>
                 <div class="find-dentist">
-                    <a href="<?= get_field('find_a_dentist','options');?>">Find A 360 Dentist</a>
+                    <a href="<?= get_field('header_login_button_link','options');?>"><?= get_field('header_login_button_text','options');?></a>
                 </div>
                 <div class="search">
                     <img src="<?= get_template_directory_uri() ?>/build/images/search.png" />
