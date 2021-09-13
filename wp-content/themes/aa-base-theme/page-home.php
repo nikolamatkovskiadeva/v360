@@ -16,7 +16,7 @@ get_header();
 
 		
 		
-		$tmp_parts = ['hubspot-modal','cost','timing','steps','before-after','form'];
+		$tmp_parts = ['hubspot-modal','cost','timing','steps','before-after'];
 
 		foreach($tmp_parts as $part){
 			include get_template_directory() . '/template-parts/'. $part .'.php';
