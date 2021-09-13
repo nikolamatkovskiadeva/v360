@@ -1098,6 +1098,53 @@
             animateIgNumbers();
         }); */
 
+        $('input[name="patient"]').change(function(){
+            if($('#dentist').is(':checked')){
+                $('.modal-form-fields.practice').show();
+            }else{
+                $('.modal-form-fields.practice').hide();
+            }
+        })
+
+        $('.hero-content-buton').click(function(){
+            $('.modal').addClass('active');
+            $('.modal-overlay').stop().fadeTo('slow',1);
+        })
+
+        
+        $('.close-modal').click(function(){
+            $('.modal').removeClass('active');
+            $('.modal-overlay').fadeOut();
+        })
+
+        $('.modal form').on('submit',function(event){
+            event.preventDefault();
+            
+            var form_data = $('.modal form').serialize();
+
+            $.ajax({
+				type: 'POST',
+				url: '/wp-admin/admin-ajax.php',
+				data:{
+					'action':'hbsubs',
+					'fields':form_data
+				},
+				dataType: 'json', 
+				success:function(resp){
+                    $('.modal-message').empty();
+                    $('.modal-message').addClass(resp.type).append(resp.message);
+
+                    setTimeout(function(){
+                        $('.modal').removeClass('active');
+                    }, 1000);
+				},
+				 error: function (jqXHR, exception) {
+					console.log("DA");
+				 }
+			})
+            
+        })
+        
     });
 
     

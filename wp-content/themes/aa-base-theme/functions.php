@@ -75,4 +75,3 @@ require get_template_directory() . '/inc/ajax-functions.php';
 add_image_size( 'hero-banner', 2600, 1095, true );
 //add_image_size( 'email-banner', 600, 180, true );
 
-

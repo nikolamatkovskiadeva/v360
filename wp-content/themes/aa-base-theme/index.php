@@ -11,7 +11,7 @@
  *
  * @package aa-base
  */
-
+die("A");
 get_header();
 ?>
 
